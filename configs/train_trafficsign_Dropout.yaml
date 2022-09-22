@@ -1,0 +1,12 @@
+MODEL:
+    NAME: 'protonet_resnet'
+    INPUT_DIM: (84,84,3)
+    DISTANCE: 'euclidean'
+    PRETRAINED: 'outputs/miniImagenet_Dropout/best_model.pt'
+    DROPOUT: 0.25
+DATASET:
+    NAME: 'trafficsign'
+    WAY: 23  # only 23 training classes
+OUTPUT_DIR: 'outputs/trafficsign_Dropout/'
+ACQUISITION_FUNCTIONS: ['variation ratio', 'BALD',]
+MC_DROPOUT_ITERATIONS: 10

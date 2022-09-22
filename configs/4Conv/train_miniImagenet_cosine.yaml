@@ -1,0 +1,7 @@
+MODEL:
+    NAME: 'protonet_conv'
+    INPUT_DIM: (84,84,3)
+    DISTANCE: 'cosine'
+DATASET:
+    NAME: 'miniImagenet'
+OUTPUT_DIR: 'outputs/miniImagenet_conv_cosine/'

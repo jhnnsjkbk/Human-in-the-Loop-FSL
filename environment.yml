@@ -1,0 +1,32 @@
+# run: conda update conda
+# run: conda update --all
+# run: conda env create --file environment.yml
+# run: source activate HidL
+name: HidL
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python
+  - matplotlib
+  - jupyter
+  - scikit-learn
+  - scipy
+  - pathlib
+  - pandas
+  - numpy
+  - requests
+  - python-dotenv
+  - qgrid
+  - pip
+  - openpyxl
+  - pytorch
+  - torchvision
+  - pillow
+  - tqdm
+  - h5py
+  - yacs
+  - pip:
+    - -e .
+    - torchnet
+    - pytorchcv

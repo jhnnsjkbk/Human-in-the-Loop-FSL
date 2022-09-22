@@ -1,0 +1,7 @@
+MODEL:
+    NAME: 'protonet_resnet'
+    INPUT_DIM: (32,32,3)
+    DISTANCE: 'euclidean'
+DATASET:
+    NAME: 'cifar100'
+OUTPUT_DIR: 'outputs/cifar100_ResNet/'

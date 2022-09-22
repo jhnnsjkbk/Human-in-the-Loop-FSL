@@ -1,0 +1,14 @@
+MODEL:
+    NAME: 'protonet_resnet'
+    INPUT_DIM: (84,84,3)
+    DISTANCE: 'euclidean'
+DATASET:
+    NAME: 'miniImagenet'
+    TEST_QUERY: 100
+OUTPUT_DIR: 'outputs/miniImagenet/'
+ACQUISITION_FUNCTIONS: [
+    'random', 'class iteration',
+    'maxentropy', 'margin', 'min confidence',
+    'maxentropy distance', 'maxmin distance', 'margin distance',
+    'cluster maxentropy', 'cluster maxdistance', 'cluster margin',
+]

@@ -1,0 +1,12 @@
+MODEL:
+    NAME: 'protonet_resnet'
+    INPUT_DIM: (84,84,3)
+    DISTANCE: 'euclidean'
+DATASET:
+    NAME: 'miniImagenet'
+    TEST_QUERY: 100
+OUTPUT_DIR: 'outputs/miniImagenet/oracle_'
+ACQUISITION_FUNCTIONS: [
+    'oracle model',
+    #'oracle method',
+]

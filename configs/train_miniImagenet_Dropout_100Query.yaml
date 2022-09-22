@@ -1,0 +1,11 @@
+MODEL:
+    NAME: 'protonet_resnet'
+    INPUT_DIM: (84,84,3)
+    DISTANCE: 'euclidean'
+    DROPOUT: 0.25
+DATASET:
+    NAME: 'miniImagenet'
+    TEST_QUERY: 100
+OUTPUT_DIR: 'outputs/miniImagenet_Dropout/'
+MC_DROPOUT_ITERATIONS: 10
+ACQUISITION_FUNCTIONS: ['variation ratio', 'BALD',]

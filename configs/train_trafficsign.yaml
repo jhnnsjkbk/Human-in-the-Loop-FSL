@@ -1,0 +1,9 @@
+MODEL:
+    NAME: 'protonet_resnet'
+    INPUT_DIM: (84,84,3)
+    DISTANCE: 'euclidean'
+    PRETRAINED: 'outputs/miniImagenet/best_model.pt'
+DATASET:
+    NAME: 'trafficsign'
+    WAY: 23  # only 23 training classes
+OUTPUT_DIR: 'outputs/trafficsign/'

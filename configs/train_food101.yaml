@@ -1,0 +1,8 @@
+MODEL:
+    NAME: 'protonet_resnet'
+    INPUT_DIM: (84,84,3)
+    DISTANCE: 'euclidean'
+    PRETRAINED: 'outputs/miniImagenet/best_model.pt'
+DATASET:
+    NAME: 'food101'
+OUTPUT_DIR: 'outputs/food101/'
